@@ -4,6 +4,7 @@ import randomcolor from "randomcolor";
 import { fetchData } from "../store/song/actions";
 import { useSelector, useDispatch } from "react-redux";
 import { selectLoading, selectData } from "../store/song/selectors";
+import Spinner from "../../assets/spinner/Spinner";
 
 export default function GameScreen({ navigation }) {
   const dispatch = useDispatch();
@@ -24,7 +25,7 @@ export default function GameScreen({ navigation }) {
         flex: 1,
       }}
     >
-      {loading ? <Text>Loading...</Text> : null}
+      {loading ? <Spinner /> : null}
       <Text
         style={{
           fontWeight: "bold",
