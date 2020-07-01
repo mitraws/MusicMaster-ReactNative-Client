@@ -15,17 +15,17 @@ export default function GameScreen({ navigation }) {
       let tracks = resChart.data.message.body.track_list;
       const randomTrack = tracks[Math.floor(Math.random() * tracks.length)];
       const randomTrackId = randomTrack["track"]["track_id"];
-    //   console.log("Random???", randomTrackId);
+      //   console.log("Random???", randomTrackId);
       const resSnippet = await Axios.get(
         `https://api.musixmatch.com/ws/1.1/track.snippet.get?track_id=${randomTrackId}&apikey=9f284760366285909b638e2b9468eea5`
       );
       let snippet = resSnippet.data.message.body.snippet.snippet_body;
-    //   console.log("Snippet???", snippet);
+      //   console.log("Snippet???", snippet);
       const songState = {
         // trackId: 2,
-        // artistName: "whatever",
+        artistName: randomTrack["track"]["artist_name"],
         lyricSnippet: snippet,
-        // songName: "the name",
+        songName: randomTrack["track"]["track_name"],
       };
       setSong(songState);
     };
@@ -44,8 +44,10 @@ export default function GameScreen({ navigation }) {
           textAlign: "center",
         }}
       >
-        GameScreen
+        {song.lyricSnippet}
       </Text>
+      <Text>{song.artistName}</Text>
+      <Text>{song.songName}</Text>
     </View>
   );
 }
