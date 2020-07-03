@@ -29,7 +29,7 @@ My focus was to build something I could use myself, to learn technology I can ad
 ## Workflow 
 To ensure high productivitity, I used Githubs project board to effectively document and communicate the sequence and processes from initiation to completion. I started with entering the user stories and [wireframes](https://github.com/mitraws/MusicMaster-ReactNative-Client/blob/development/Documentation/MusicMaster%wireframe.pdf) in the project board, breaking down the user stories into smaller tasks and link them to pull requests. 
 
-#### :sparkles:Check out my [workflow]((https://github.com/mitraws/MusicMaster-ReactNative-Client/projects/2)).:sparkles:
+#### :sparkles:Check out my [workflow](https://github.com/mitraws/MusicMaster-ReactNative-Client/projects/2).:sparkles:
 
 #### :sparkles:Check out a [Pull Request sample](https://github.com/mitraws/MusicMaster-ReactNative-Client/pull/5).:sparkles:
 
@@ -85,4 +85,4 @@ In the project directory, you can run:
  ## Contributions
 This project is currently an MVP; feel free to file an issue for ideas, suggestions or feedback.
 
-:blush:contributions and pull requests are more than welcome!:blush:
+:blush: contributions and pull requests are more than welcome!:blush:
