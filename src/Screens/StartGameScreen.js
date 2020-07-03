@@ -8,9 +8,23 @@ import {
   Keyboard,
 } from "react-native";
 import randomcolor from "randomcolor";
+import { useDispatch } from "react-redux";
+import { addPlayer } from "../store/user/actions";
 
 export default function StartGameScreen({ navigation }) {
-  const [player, setPlayer] = useState("");
+  const dispatch = useDispatch();
+  const [text, setText] = useState("");
+  const [players, setPlayers] = useState([]);
+
+  const handleAddPlayer = () => {
+    alert('Player added!')
+    setPlayers([...players, text]);
+  };
+
+  const handleSubmit = () => {
+    dispatch(addPlayer(players));
+    console.log("players added?", players);
+  };
 
   return (
     <View
@@ -34,18 +48,25 @@ export default function StartGameScreen({ navigation }) {
         <TextInput
           onBlur={Keyboard.dismiss}
           blurOnSubmit={true}
+          clearTextOnFocus={true}
           maxLength={20}
           autoCapitalize="words"
           style={styles.textInput}
           placeholder="Player name"
-          onChangeText={(text) => setPlayer(text)}
-          value={player}
+          onChangeText={(text) => setText(text)}
+          value={text}
         ></TextInput>
         <TouchableOpacity
-          onPress={() => handleSubmit()}
+          onPress={() => handleAddPlayer()}
           style={styles.addButton}
         >
           <Text style={styles.addButtonText}>Add</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={(() => navigation.navigate("Game"), () => handleSubmit())}
+          style={styles.addButton}
+        >
+          <Text style={styles.addButtonText}>Play</Text>
         </TouchableOpacity>
       </View>
     </View>
