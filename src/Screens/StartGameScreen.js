@@ -22,6 +22,7 @@ export default function StartGameScreen({ navigation }) {
   };
 
   const handleSubmit = () => {
+    navigation.navigate("Game")
     dispatch(addPlayer(players));
     console.log("players added?", players);
   };
@@ -63,12 +64,13 @@ export default function StartGameScreen({ navigation }) {
           <Text style={styles.addButtonText}>Add</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={(() => navigation.navigate("Game"), () => handleSubmit())}
+          onPress={(() => handleSubmit())}
           style={styles.addButton}
         >
           <Text style={styles.addButtonText}>Play</Text>
         </TouchableOpacity>
       </View>
+      {/* {gamePlayers} */}
     </View>
   );
 }
