@@ -1,7 +1,8 @@
+![](Documentation/MusicMaster-banner.png)
 # :notes:Music Master:musical_note: - a game to show off your musical skills!
 This minimalistic mobile game is based on a cardgame, to be played on your own:bust_in_silhouette: or in a group:family: . Read out the lyric from a popular song and have your teammates say:speech_balloon: or sing:microphone: the next line of the song! Earn extra points by guessing the artist and song titles :star:. 
 
-![](gif of homepage)
+---
 
 ## Table of contents:
 - **[Game demo](##game-demo)**
@@ -15,14 +16,14 @@ This minimalistic mobile game is based on a cardgame, to be played on your own:b
 - **[Contributions](#contributions)**
 
 ## Game demo 
-![](gif of app)
+![](Documentation/HomeScreen-demo.gif)
 
 ## Goals for this project 
 This project was built to showcase my capabilites in:
 - coding in JavaScript, using different technologies and libraries  
 - writing clean and organized code with structured files and folders
 - organizational skills; bring attention to planning, the readme and documentation
-- disciplined use of version control with commits, branches & PR's
+- disciplined use of version control with descriptive commits, branches & PR's
 
 My focus was to build something I could use myself, to learn technology I can advance on in future hobby projects, and to broaden my current skillset.
 
