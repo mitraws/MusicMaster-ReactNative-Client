@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { Animated, Text, View, Button } from "react-native";
+import randomcolor from "randomcolor";
 
 export default function HomeScreen({ navigation }) {
   const FadeInView = (props) => {
@@ -27,7 +28,12 @@ export default function HomeScreen({ navigation }) {
 
   return (
     <View
-      style={{ alignItems: "center", justifyContent: "center", flex: 1 }}
+      style={{
+        backgroundColor: randomcolor(),
+        alignItems: "center",
+        justifyContent: "center",
+        flex: 1,
+      }}
     >
       <FadeInView>
         <Text
