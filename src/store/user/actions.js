@@ -4,7 +4,7 @@ import {
   appLoading,
   appDoneLoading,
   showMessageWithTimeout,
-} from "../../appState/actions";
+} from "../appState/actions";
 
 export const PLAYER_ADD_SUCCESS = "PLAYER_ADD_SUCCESS";
 
