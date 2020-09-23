@@ -42,7 +42,7 @@ To ensure high productivitity, I used Githubs project board to effectively docum
 
 #### :sparkles:Check out the [Database model](https://github.com/mitraws/MusicMaster-ReactNative-Client/blob/development/Documentation/Database%20ER%20diagram%20(crow's%20foot).png).:sparkles:
 
-#### :sparkles:Check out the [Wireframes](https://github.com/mitraws/MusicMaster-ReactNative-Client/blob/development/Documentation/MusicMaster%wireframe.pdf).:sparkles:
+#### :sparkles:Check out the [Wireframes](https://github.com/mitraws/MusicMaster-ReactNative-Client/blob/development/Documentation/MusicMaster%20wireframe.pdf).:sparkles:
 
 ## Technologies used
 - Music Master is built with React-Native and compiled using Expo 
